@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .accordion-header {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .accordion-header::before {
+            content: "\25BC";
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .accordion-content {
+            padding: 10px;
+            display: none;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* CSS for the accordion effect */
+        .accordion-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="pink">
+        <h1>One Liner || Wise Crack</h1>
+    </header>
+    <div class="container">
+        <h2>Privacy Policy</h2>
+        <div class="accordion">
+            <!-- Policies -->
+            <h3 class="accordion-header">Collection of Information</h3>
+            <div class="accordion-content">
+                <p>Our app collects user-generated content in the form of one-liner jokes (status) submitted by users. This information is used solely for the purpose of providing the joke-sharing functionality within the app.</p>
+            </div>
+
+            <h3 class="accordion-header">Use of Information</h3>
+            <div class="accordion-content">
+                <p> The user-generated content collected by our app is used to display jokes to users and enable them to customize the background of the joke, share the joke with others, copy the text, and save jokes as favorites within the app.</p>
+            </div>
+
+            <h3 class="accordion-header">Storage of Information</h3>
+            <div class="accordion-content">
+                <p> User-generated content, including jokes and customizations, may be stored locally on the user's device for offline access and faster retrieval. This information is stored securely and is not shared with third parties.</p>
+            </div>
+
+            <h3 class="accordion-header">Sharing of Information</h3>
+            <div class="accordion-content">
+                <p> Our app allows users to share jokes with others through external platforms such as social media, messaging apps, and email. Users have the option to share jokes anonymously or with attribution to the app.</p>
+            </div>
+
+            <h3 class="accordion-header">Data Security</h3>
+            <div class="accordion-content">
+                <p> We take the security of user-generated content seriously and employ industry-standard encryption and security measures to protect this information from unauthorized access, disclosure, alteration, or destruction.</p>
+            </div>
+
+            <h3 class="accordion-header">Data Retention</h3>
+            <div class="accordion-content">
+                <p> User-generated content may be retained within the app for as long as the user chooses to keep it or until the user decides to delete it. Users have the ability to delete their jokes and customizations at any time.</p>
+            </div>
+
+            <h3 class="accordion-header">Analytics and Advertising</h3>
+            <div class="accordion-content">
+                <p> Our app may utilize analytics tools to collect anonymized usage data for the purpose of improving the app's functionality and user experience. We do not use this data for targeted advertising or marketing purposes.</p>
+            </div>
+
+            <h3 class="accordion-header">Children's Privacy</h3>
+            <div class="accordion-content">
+                <p> Our app is not intended for use by children under the age of 13. We do not knowingly collect personal information from children, and if we become aware that a user is under the age of 13, we will take steps to delete any personal information associated with that user.</p>
+            </div>
+            <!-- End of Policies -->
+        </div>
+    </div>
+    <footer class="pink">
+        <p>Contact us: <a href="mailto:prashant.timalsina18@gmail.com">prashant.timalsina18@gmail.com</a></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var accHeaders = document.querySelectorAll('.accordion-header');
+
+            accHeaders.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
